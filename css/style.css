@@ -16,6 +16,7 @@
   --logo-color: #000000;
   --hero-color: #2f303a;
   --background-color: #f5f4fa;
+  --border-color: #ececec;
 }
 body {
   color: var(--primary-text-color);
@@ -34,6 +35,7 @@ ul {
   list-style: none;
 }
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -54,11 +56,22 @@ img {
   margin: 0;
   list-style: none;
 }
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.card-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
 .page-header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-color);
 }
 .header-container {
   display: flex;
+  align-items: center;
 }
 .main-nav {
   display: flex;
@@ -165,14 +178,8 @@ img {
 }
 
 /*--Feutures--*/
-
-.feuter-list {
-  display: flex;
-  flex-wrap: wrap;
-}
 .specifics {
   flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
 }
 
 .title {
@@ -187,26 +194,18 @@ img {
 .section-team {
   background-color: var(--background-color);
 }
-.work-list {
-  display: flex;
-  flex-wrap: wrap;
+.work {
+  padding-top: 0;
 }
 .work-title {
   flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-}
-.comand-list {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
 }
 .comand-title {
   flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
 }
-
+.comand-list {
+  text-align: center;
+}
 .team-content {
   padding: 30px;
 }
@@ -245,7 +244,7 @@ img {
 .footer-link {
   color: var(--adres-color);
 }
-.tel-link {
+.tel-link:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -279,13 +278,9 @@ img {
 
 /*Список проектів*/
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
 }
 .project-title {
   flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
 .project-title:not(:nth-last-child(-n + 3)) {
@@ -302,8 +297,9 @@ img {
   margin-bottom: 4px;
 }
 .projects {
-  padding: 20px;
-  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+  border: 1px solid var(--border-color);
+  border-top: none;
 }
 .project {
   font-weight: 400;

@@ -92,7 +92,9 @@ img {
   display: flex;
   margin-left: 93px;
 }
-
+.header-link::before {
+  background-image: url("../images/smartphone.svg");
+}
 .header-link {
   display: block;
   padding-top: 32px;

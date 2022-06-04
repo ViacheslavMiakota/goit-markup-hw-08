@@ -266,6 +266,13 @@ ul {
   height: 44px;
   margin-right: 10px;
 }
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--accent-color);
+  color: var(--border-color);
+  border-radius: 50%;
+}
+
 .social-item :last-child {
   margin-right: 0;
 }

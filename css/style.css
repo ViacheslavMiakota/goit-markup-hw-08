@@ -40,11 +40,15 @@ img {
   max-width: 100%;
   height: auto;
 }
-svg {
+/* svg {
   fill: currentColor;
-}
+} */
 ul {
   padding-left: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 .container {
@@ -109,6 +113,7 @@ ul {
 }
 .header-link::before {
   background-image: url("../images/smartphone.svg");
+  fill: currentColor;
 }
 .header-link svg {
   margin-right: 10px;
@@ -121,6 +126,7 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  fill: currentColor;
 }
 .logo-wite {
   color: var(--button-text-color);
@@ -272,10 +278,7 @@ ul {
 .social-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
-}
-.social-icon:hover,
-.social-icon:focus {
-  fill: var(--button-text-color);
+  color: var(--button-text-color);
 }
 
 .social-item :last-child {
@@ -289,11 +292,12 @@ ul {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
+  color: var(--link-color);
 }
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: var(--link-color);
+  fill: currentColor;
 }
 .team-content {
   padding: 30px;
@@ -331,28 +335,24 @@ ul {
   display: block;
   text-align: center;
   height: 92px;
-  border: 1px solid rgba(175, 177, 184, 1);
+  border: 1px solid var(--link-color);
   border-radius: 4px;
   padding: 14px 28px;
+  color: var(--link-color);
 }
 .client-icon {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .client-link:hover,
 .client-link:focus {
   border: 1px solid var(--accent-color);
-}
-.client-icon :hover,
-.client-icon :focus {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /*Footer*/
-.addres {
-  font-style: normal;
-}
+
 .footer.addres {
   display: flex;
   flex-wrap: wrap;
@@ -367,6 +367,7 @@ ul {
 
 .container-footer {
   display: flex;
+  align-items: baseline;
 }
 .footer .logo {
   display: block;
@@ -400,14 +401,14 @@ ul {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--button-text-color);
   margin-bottom: 20px;
 }
 .footer-svg {
   display: flex;
 }
 .footer .social-icon {
-  fill: var(--button-text-color);
+  color: var(--button-text-color);
 }
 
 /*Кнопки 2ст*/
@@ -445,8 +446,12 @@ ul {
 .project-title {
   flex-basis: calc(100% / 3 - 30px);
 }
-.project-link :hover,
-.project-link :focus {
+.project-link {
+  display: flex;
+  flex-direction: column;
+}
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);

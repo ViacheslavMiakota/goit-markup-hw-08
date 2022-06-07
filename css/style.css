@@ -132,7 +132,8 @@ address {
   color: var(--button-text-color);
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.current-link {
   color: var(--accent-color);
 }
 

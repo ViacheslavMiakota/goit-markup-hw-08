@@ -207,8 +207,8 @@ address {
   border: none;
   transition: background-color var(--transition);
 }
-.hero-button {
-}
+/* .hero-button {
+} */
 .button:focus,
 .button:hover {
   background-color: var(--button-color);
@@ -359,8 +359,8 @@ address {
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
-.client-list {
-}
+/* .client-list {
+} */
 
 .client-item {
   flex-basis: calc(100% / 6 - 30px);
@@ -480,8 +480,8 @@ address {
 }
 
 /*Список проектів*/
-.project-list {
-}
+/* .project-list {
+} */
 .project-title {
   flex-basis: calc(100% / 3 - 30px);
 }

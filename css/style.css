@@ -205,7 +205,7 @@ address {
   line-height: 1.88;
   letter-spacing: 0.06em;
   border: none;
-  transition: color var(--transition);
+  transition: background-color var(--transition);
 }
 .hero-button {
 }
@@ -325,7 +325,8 @@ address {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--link-color);
-  transition: color var(--transition);
+  transition: color var(--transition),
+    background-color var(--transition);
 }
 .social-icon {
   width: 20px;
@@ -368,7 +369,7 @@ address {
   display: block;
   text-align: center;
   height: 92px;
-  border: 1px solid var(--link-color);
+  border: 1px solid currentColor;
   border-radius: 4px;
   padding: 14px 28px;
   color: var(--link-color);
@@ -473,7 +474,9 @@ address {
   line-height: 1.63;
   letter-spacing: 0.03em;
   font-family: "Roboto";
-  transition: color var(--transition);
+  transition: color var(--transition),
+    background-color var(--transition),
+    box-shadow var(--transition);
 }
 
 /*Список проектів*/
@@ -486,6 +489,7 @@ address {
   display: flex;
   flex-direction: column;
   position: relative;
+  transition: box-shadow var(--transition);
 }
 .project-link:hover,
 .project-link:focus {
@@ -530,7 +534,7 @@ address {
   color: rgba(255, 255, 255, 1);
   padding: 63px 24px;
   transform: translateY(100%);
-  transition: transform 250ms linear;
+  transition: transform var(--transition);
 }
 
 .visually-hidden {
@@ -551,7 +555,7 @@ address {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
-  transition: opasity var(--transition),
+  transition: opacity var(--transition),
     visibility var(--transition);
 }
 .backdrop.is-hidden .modal {
@@ -565,7 +569,7 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: var(--transition);
+  transition: transform var(--transition);
   background-color: rgba(255, 255, 255, 1);
   border-radius: 4px;
 }

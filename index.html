@@ -541,6 +541,34 @@
             </li>
           </ul>
         </div>
+        <div class="footer-reverse">
+          <h2>Подпишитесь на рассылку</h2>
+          <form class="footer-top-email">
+            <label
+              class="footer-lable"
+              for="footer-email"
+            ></label>
+            <input
+              type="email"
+              name="footer-email"
+              class="footer-input"
+              required
+              id="footer-email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-btn">
+              Подписаться<svg
+                class="send-icon"
+                width="24"
+                height="24"
+              >
+                <use
+                  href="./images/icons.svg#icon-icon-send"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -554,6 +582,111 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <h2 class="modal-title">
+          Оставьте свои данные, мы вам перезвоним
+        </h2>
+        <form>
+          <div class="modal-field">
+            <label class="modal-lable" for="user-name"
+              >Имя</label
+            >
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                required
+                id="user-name"
+              />
+              <svg
+                class="modal-icon"
+                width="18"
+                height="18"
+              >
+                <use
+                  href="./images/icons.svg#icon-Vector-1"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-lable" for="user-tel"
+              >Телефон</label
+            >
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-input"
+                required
+                id="user-tel"
+              />
+              <svg
+                class="modal-icon"
+                width="18"
+                height="18"
+              >
+                <use
+                  href="./images/icons.svg#icon-Vector-2"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-lable" for="user-email"
+              >Почта</label
+            >
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                class="modal-input"
+                required
+                id="user-email"
+              />
+              <svg
+                class="modal-icon"
+                width="18"
+                height="18"
+              >
+                <use
+                  href="./images/icons.svg#icon-Vector-3"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-comments">
+            <label class="modal-lable" for="user-text"
+              >Комментарий</label
+            >
+            <textarea
+              class="modal-text"
+              name="user-text"
+              id="user-text"
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="modal-top-check">
+            <input
+              type="checkbox"
+              name="privacy"
+              value="true"
+              class="modal-check visually-hidden"
+              id="privacy"
+            />
+            <label for="privacy" class="check-text">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="check-title"
+                >Условия договора</a
+              >
+            </label>
+            <button type="submit" class="modal-btn">
+              Отправить
+            </button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

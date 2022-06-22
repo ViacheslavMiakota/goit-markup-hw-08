@@ -450,13 +450,13 @@ address {
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  color: inherit;
   transition: border var(--transition);
 }
 .footer-input:hover,
 .footer-input:focus {
   border: 1px solid var(--button-color);
   outline: none;
-  color: inherit;
 }
 
 .footer-top-email {
@@ -608,6 +608,12 @@ address {
   position: absolute;
   top: 8px;
   right: 8px;
+  cursor: pointer;
+  transition: fill var(--transition);
+}
+.close-btn:hover .icon-close,
+.close-btn:focus .icon-close {
+  fill: var(--accent-color);
 }
 
 .modal-title {
@@ -698,9 +704,14 @@ address {
 .modal-check:checked + .check-text::before {
   background-image: url(../images/Vector-5.svg);
   background-color: var(--button-color);
-  border: none;
+  border: 2px solid var(--button-color);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.modal-check:hover + .check-text::before,
+.modal-check:focus + .check-text::before {
+  border: 2px solid var(--button-color);
 }
 
 .check-text {
@@ -728,5 +739,4 @@ address {
 }
 .check-title {
   color: var(--accent-color);
-  margin-left: 4px;
 }

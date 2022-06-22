@@ -657,6 +657,8 @@ address {
   resize: none;
   padding: 12px 16px;
   outline: none;
+  transition: fill var(--transition);
+  transition: border var(--transition);
 }
 
 .modal-lable {

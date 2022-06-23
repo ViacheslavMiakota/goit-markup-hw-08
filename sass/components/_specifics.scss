@@ -1,0 +1,32 @@
+.specifics {
+  flex-basis: calc(100% / 4 - 30px);
+  &__title {
+    margin-bottom: 10px;
+    line-height: 1.14;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+  &__title::before {
+    content: "";
+    height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--background-color);
+    margin-bottom: 30px;
+    display: block;
+  }
+}
+
+.icon-antena::before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/Vector.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}

@@ -1,0 +1,27 @@
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.card-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}

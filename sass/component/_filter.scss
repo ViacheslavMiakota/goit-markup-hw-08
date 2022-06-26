@@ -1,0 +1,32 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__list {
+    margin-bottom: 50px;
+  }
+  &__iteam + &__iteam {
+    margin-left: 20px;
+  }
+  &__button {
+    border: none;
+    padding: 6px 22px;
+    border-radius: 4px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    font-family: "Roboto";
+    transition: color var(--transition),
+      background-color var(--transition),
+      box-shadow var(--transition);
+    .filter__button:focus,
+    &:hover {
+      background-color: var(--accent-color);
+      color: var(--button-text-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.25),
+        0px 1px 2px rgba(0, 0, 0, 0.025);
+    }
+  }
+}

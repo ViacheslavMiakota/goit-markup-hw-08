@@ -9,6 +9,7 @@
     ),
     url(../images/img-mobil.jpg);
   max-width: 480px;
+  width: 100vw;
   background-repeat: no-repeat;
   margin-right: auto;
   margin-left: auto;
@@ -28,6 +29,7 @@
       ),
       url(../images/img-mobil.jpg);
     max-width: 480px;
+    width: 100vw;
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),

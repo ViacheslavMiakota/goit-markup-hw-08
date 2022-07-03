@@ -32,8 +32,8 @@
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   padding: 40px;
   margin: 0 auto;
   position: absolute;
@@ -43,6 +43,13 @@
   transition: transform var(--transition);
   background-color: rgba(255, 255, 255, 1);
   border-radius: 4px;
+  @media screen and (max-width: 479px) {
+    width: 100vw;
+  }
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
+  }
   &__title {
     font-size: 20px;
     line-height: 1.15;
@@ -153,6 +160,8 @@
 
   &__text {
     font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-bottom: 30px;
@@ -167,6 +176,10 @@
       border: 2px solid var(--title-text-color);
       border-radius: 2px;
       margin-right: 7px;
+    }
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.71px;
     }
   }
 }

@@ -7,7 +7,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Img-mobil.jpg);
+    url(../images/img-mobil.jpg);
   max-width: 480px;
   background-repeat: no-repeat;
   margin-right: auto;
@@ -17,7 +17,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Img-mobil-2x.jpg);
+      url(../images/img-mobil-2x.jpg);
   }
   @include mobil {
     padding-top: 118px;
@@ -26,14 +26,14 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Img-mobil.jpg);
+      url(../images/img-mobil.jpg);
     max-width: 480px;
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/Img-mobil-2x.jpg);
+        url(../images/img-mobil-2x.jpg);
     }
   }
   @include tablet {
@@ -50,7 +50,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/Img-tablet-2x.jpg);
+        url(../images/img-tablet-2x.jpg);
     }
   }
   @include desktop {
@@ -60,14 +60,14 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Img-desktop.jpg);
+      url(../images/img-desktop.jpg);
     max-width: 1600px;
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/Img-desktop-2x.jpg);
+        url(../images/img-desktop-2x.jpg);
     }
   }
   &__title {

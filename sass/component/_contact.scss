@@ -1,6 +1,14 @@
 .auth-nav {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  @include desktop {
+    display: flex;
+    margin-left: auto;
+  }
   & .item + .item {
     margin-left: 50px;
   }

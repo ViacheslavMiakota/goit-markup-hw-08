@@ -35,7 +35,7 @@
     <header class="header">
       <div class="container header-container">
         <nav class="main-nav">
-          <a href="https://google.com" class="link logo"
+          <a href="https://google.com" class="header__logo link logo"
             >Web<span class="logo__black">Studio</span></a
           >
           <ul class="list site-nav">
@@ -89,6 +89,85 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open">
+        <svg
+                class="menu-icon"
+              >
+                <use
+                  href="./images/icons.svg#icon-menu_open"
+                ></use>
+      </button>
+      <div class="mob-menu is-hidden">
+        <button type="button" class="menu-close">
+        <svg
+                class="menu-icon"
+              >
+                <use
+                  href="./images/icons.svg#icon-menu_close"
+                ></use>
+      </button>
+      <div class="mob-container container">
+      <ul class="list mob-site-nav">
+            <li class="mob-item">
+              <a
+                href="./index.html"
+                class="mob-item__link current-link link"
+                >Студия</a
+              >
+            </li>
+            <li class="mob-item">
+              <a
+                href="./portfolio.html"
+                class="mob-item__link link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-item">
+              <a href="/Контакты" class="mob-item__link link"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-auth-nav list">
+            <li class="mob-item">
+            <a
+              href="tel:+380961111111"
+              class="mob-item__tel link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mob-item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mob-item__adres link"
+            >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="social-mob">
+            <li class="social-mob__item">
+              <a href="" class="social-mob__link">
+                instagram
+              </a>
+            </li>
+            <li class="social-mob__item">
+              <a href="" class="social-mob__link link">
+                twitter
+              </a>
+            </li>
+            <li class="social-mob__item">
+              <a href="" class="social-mob__link link">
+                facebook
+              </a>
+            </li>
+            <li class="social-mob__item">
+              <a href="" class="social-mob__link link">
+                linkedin
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       </div>
     </header>
     <main>
@@ -756,5 +835,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

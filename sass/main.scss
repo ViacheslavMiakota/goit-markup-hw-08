@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./utils/reset";
 @import "./utils/visually";
+@import "./utils/mixins";
 @import "./base/section";
 @import "./base/common";
 @import "./base/card-set";
@@ -12,6 +13,7 @@
 @import "./component/social-list";
 @import "./component/navigation";
 @import "./component/contact";
+@import "./component/mobil";
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/specifics";

@@ -4,9 +4,17 @@
 }
 
 .site-nav {
-  color: var(--title-text-color);
-  display: flex;
-  margin-left: 93px;
+  display: none;
+  @include tablet {
+    display: flex;
+    color: var(--title-text-color);
+    margin-left: 93px;
+  }
+  @include desktop {
+    display: flex;
+    color: var(--title-text-color);
+    margin-left: 93px;
+  }
   & .item + .item {
     margin-left: 50px;
   }
@@ -32,6 +40,10 @@
     letter-spacing: 0.02em;
     fill: currentColor;
     transition: color var(--transition);
+    @include tablet {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
     &.current-link::after {
       position: absolute;
       content: "";

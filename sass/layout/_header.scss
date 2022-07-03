@@ -5,3 +5,35 @@
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 766px) {
+  .menu-open {
+    display: flex;
+    fill: #000000;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 50%;
+    margin-left: auto;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    transition: fill var(--transition);
+    &:hover .icon-close,
+    &:focus .icon-close {
+      fill: var(--accent-color);
+    }
+  }
+  .menu-icon {
+    width: 40px;
+    height: 40px;
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+      cursor: pointer;
+    }
+  }
+}
+@include tablet {
+  .menu-open {
+    display: none;
+  }
+}

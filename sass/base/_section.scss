@@ -2,11 +2,19 @@
   padding-top: 94px;
   padding-bottom: 94px;
   &__title {
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
-  text-align: center;
+    font-size: 28px;
+    line-height: 1.18;
+    color: var(--title-text-color);
+    margin-bottom: 30px;
+    text-align: center;
+    @include tablet {
+      font-size: 28px;
+      line-height: 1.18;
+    }
+    @include desktop {
+      font-size: 36px;
+      line-height: 1.17;
+      margin-bottom: 50px;
+    }
+  }
 }
-}
-

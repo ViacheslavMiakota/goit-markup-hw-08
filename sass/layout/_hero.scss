@@ -8,8 +8,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/img-mobil.jpg);
-  max-width: 480px;
-  width: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-right: auto;
   margin-left: auto;
@@ -28,8 +27,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/img-mobil.jpg);
-    max-width: 480px;
-    width: 100vw;
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
@@ -46,7 +43,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/img-tablet.jpg);
-    max-width: 768px;
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
@@ -58,6 +54,8 @@
   @include desktop {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 480px;
+    width: 100vw;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)

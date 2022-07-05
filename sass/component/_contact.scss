@@ -4,14 +4,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-  }
-  @include desktop {
-    display: flex;
     margin-left: auto;
+    flex-direction: column;
+    gap: 10px;
   }
-  & .item + .item {
-    margin-left: 50px;
+
+  @include desktop {
+    flex-direction: row;
   }
+
   & .link:hover,
   & .link:focus {
     color: var(--accent-color);

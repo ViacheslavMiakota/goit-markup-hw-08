@@ -1,22 +1,20 @@
 .main-nav {
   display: flex;
   align-items: center;
+  gap: 88px;
 }
-
 .site-nav {
   display: none;
   @include tablet {
     display: flex;
     color: var(--title-text-color);
-    margin-left: 93px;
+    gap: 50px;
+    align-items: center;
   }
   @include desktop {
     display: flex;
     color: var(--title-text-color);
     margin-left: 93px;
-  }
-  & .item + .item {
-    margin-left: 50px;
   }
   & .link:hover,
   & .link:focus,
@@ -33,17 +31,12 @@
   &__link {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     fill: currentColor;
     transition: color var(--transition);
-    @include tablet {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
+
     &.current-link::after {
       position: absolute;
       content: "";
@@ -53,5 +46,11 @@
       border-radius: 2px;
       background-color: var(--accent-color);
     }
+  }
+}
+.current-link {
+  @include tablet {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }

@@ -1,13 +1,14 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  @include tablet {
+    justify-content: center;
+  }
+
   &__list {
     margin-bottom: 50px;
-  }
-  &__iteam + &__iteam {
-    margin-left: 20px;
-    margin-bottom: 15px;
+    column-gap: 15px;
+    row-gap: 20px;
   }
   &__button {
     border: none;

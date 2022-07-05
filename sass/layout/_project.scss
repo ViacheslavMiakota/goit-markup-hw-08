@@ -1,14 +1,15 @@
 .project {
   &__list {
-    flex-basis: calc(100% - 30px);
+    width: 100%;
     @include tablet {
-      flex-basis: calc(100% / 2 - 30px);
+      width: calc((100% - 30px) / 2);
     }
     @include desktop {
-      flex-basis: calc(100% / 3 - 30px);
+      width: calc((100% - 60px) / 3);
     }
   }
   &__link {
+    height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -22,6 +23,7 @@
     &:hover .project__text,
     &:focus .project__text {
       transform: translateY(0);
+      opacity: 1;
     }
   }
   &__name {
@@ -35,6 +37,7 @@
     padding: 20px 24px;
     border: 1px solid var(--border-color);
     border-top: none;
+    flex-grow: 1;
   }
   &__item {
     font-weight: 400;
@@ -49,12 +52,20 @@
     position: absolute;
     top: 0;
     height: 100%;
+    opacity: 0;
+    overflow: auto;
     font-size: 18px;
     line-height: 1.56;
     background-color: rgba(33, 150, 243, 0.9);
     color: rgba(255, 255, 255, 1);
-    padding: 63px 24px;
+    padding: 77px 24px;
     transform: translateY(100%);
     transition: transform var(--transition);
+    @include tablet {
+      padding: 49px 24px 77px 24px;
+    }
+    @include desktop {
+      padding: 63px 24px;
+    }
   }
 }

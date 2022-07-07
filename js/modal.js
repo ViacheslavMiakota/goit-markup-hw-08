@@ -7,7 +7,7 @@
       "[data-modal-close]"
     ),
     modal: document.querySelector("[data-modal]"),
-    body: document.querySelector("[body]"),
+    body: document.querySelector("body"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);

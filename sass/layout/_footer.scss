@@ -101,6 +101,9 @@
       align-items: flex-start;
     }
   }
+  .social-list__icon {
+    fill: var(--button-text-color);
+  }
 }
 @include desktop {
   .footer__item:not(:last-child) {

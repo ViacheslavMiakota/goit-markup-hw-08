@@ -88,9 +88,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-.mob-item {
-  margin-bottom: 43px;
-}
+
 .social-mob__item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);

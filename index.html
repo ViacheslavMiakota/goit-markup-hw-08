@@ -131,7 +131,7 @@
               </li>
             </ul>
             <div class="mob-contact">
-              <ul class="mob-auth-nav list">
+              <ul class="mob-site-nav list">
                 <li class="mob-item">
                   <a
                     href="tel:+380961111111"
@@ -149,7 +149,7 @@
               </ul>
               <ul class="social-mob">
                 <li class="social-mob__item">
-                  <a href="" class="social-mob__link">
+                  <a href="" class="social-mob__link link">
                     instagram
                   </a>
                 </li>
@@ -289,12 +289,17 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="list comand card-set">
             <li class="comand__title card-item">
-              <img
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/img-1-3x.jpg">
+                <source media="(min-width: 768px)" srcset="./images/img-1-2x.jpg">
+                
+                <img
                 src="./images/img-1.jpg"
                 alt="Фото Ігорь  Демьяненко"
                 width="270"
                 height="260"
               />
+              </picture>
               <div class="team">
                 <h3 class="team__name name">
                   Игорь Демьяненко
@@ -355,12 +360,17 @@
               </div>
             </li>
             <li class="comand__title card-item">
-              <img
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/img-2-3x.jpg">
+                <source media="(min-width: 768px)" srcset="./images/img-2-2x.jpg">
+                
+                <img
                 src="./images/img-2.jpg"
                 alt="Фото Ольга Репина"
                 width="270"
                 height="260"
               />
+              </picture>
               <div class="team">
                 <h3 class="team__name name">
                   Ольга Репина
@@ -421,12 +431,16 @@
               </div>
             </li>
             <li class="comand__title card-item">
-              <img
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/img-3-3x.jpg">
+                <source media="(min-width: 768px)" srcset="./images/img-3-2x.jpg">
+                <img
                 src="./images/img-3.jpg"
                 alt="Фото Николай Тарасов"
                 width="270"
                 height="260"
               />
+              </picture>
               <div class="team">
                 <h3 class="team__name name">
                   Николай Тарасов
@@ -485,12 +499,16 @@
               </div>
             </li>
             <li class="comand__title card-item">
-              <img
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/img-4-3x.jpg">
+                <source media="(min-width: 768px)" srcset="./images/img-4-2x.jpg">
+                <img
                 src="./images/img-4.jpg"
                 alt="Фото Михаил Ермаков"
                 width="270"
                 height="260"
               />
+              </picture>
               <div class="team">
                 <h3 class="team__name name">
                   Михаил Ермаков
@@ -826,9 +844,11 @@
               id="privacy"
             />
             <label for="privacy" class="check__text">
-              Соглашаюсь с рассылкой и принимаю&nbsp;
-              <a href="" class="check__title">
-                Условия договора</a
+              <span>
+                Соглашаюсь с рассылкой и принимаю&nbsp;
+                <a href="" class="check__title">
+                  Условия договора</a
+                ></span
               >
             </label>
             <button type="submit" class="button">

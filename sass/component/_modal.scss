@@ -163,16 +163,16 @@
   }
 
   &__text {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 
     cursor: pointer;
     &::before {

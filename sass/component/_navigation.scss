@@ -31,15 +31,9 @@
   &__link {
     display: flex;
     align-items: center;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
     fill: currentColor;
     transition: color var(--transition);
-    @include desktop {
-      font-size: 14px;
-      line-height: 1.14;
-    }
+    
 
     &.current-link::after {
       position: absolute;

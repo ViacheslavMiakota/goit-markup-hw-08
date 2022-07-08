@@ -52,15 +52,21 @@ address {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .section__title {
+  text-align: center;
   font-size: 28px;
   line-height: 1.18;
   color: var(--title-text-color);
   margin-bottom: 30px;
-  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .section__title {
@@ -304,7 +310,6 @@ body {
 
 .check {
   display: block;
-  text-align: center;
 }
 .check__title {
   color: var(--accent-color);
@@ -358,9 +363,14 @@ body {
   }
 }
 .filter__list {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   column-gap: 15px;
   row-gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .filter__list {
+    margin-bottom: 50px;
+  }
 }
 .filter__button {
   border: none;
@@ -477,17 +487,8 @@ body {
 .item__link {
   display: flex;
   align-items: center;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
   fill: currentColor;
   transition: color var(--transition);
-}
-@media screen and (min-width: 1200px) {
-  .item__link {
-    font-size: 14px;
-    line-height: 1.14;
-  }
 }
 .item__link.current-link::after {
   position: absolute;
@@ -517,6 +518,15 @@ body {
     margin-left: auto;
     flex-direction: column;
     gap: 10px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    font-size: 14px;
+    line-height: 1.14;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -635,6 +645,10 @@ body {
 
 .header {
   border-bottom: 1px solid var(--border-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .header-container {
@@ -767,6 +781,7 @@ body {
 }
 
 .specifics__title {
+  text-align: center;
   margin-bottom: 10px;
   line-height: 1.14;
   font-size: 14px;
@@ -1036,6 +1051,9 @@ body {
   overflow: auto;
   font-size: 18px;
   line-height: 1.56;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(33, 150, 243, 0.9);
   color: rgb(255, 255, 255);
   padding: 77px 24px;
@@ -1044,7 +1062,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .project__text {
-    padding: 49px 24px 77px 24px;
+    padding: 49px 24px;
   }
 }
 @media screen and (min-width: 1200px) {

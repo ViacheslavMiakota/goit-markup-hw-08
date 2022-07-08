@@ -1,12 +1,16 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop{
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   &__title {
+    text-align: center;
     font-size: 28px;
     line-height: 1.18;
     color: var(--title-text-color);
     margin-bottom: 30px;
-    text-align: center;
     @include tablet {
       font-size: 28px;
       line-height: 1.18;
